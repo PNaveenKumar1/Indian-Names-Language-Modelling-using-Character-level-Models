@@ -82,7 +82,7 @@ You can monitor the evaluation metrics to determine the effectiveness of the FNN
      - Names: `ha, ha, ha, ha, ha`
 
 ### 3. **3-Gram Model**
-   - **Validation Perplexity (without smoothing):** 4.6436
+   - **Validation Perplexity (with smoothing):** 4.6436
    - **Generated Names:**
      - Prefix: `<s><s>sh`
      - Names: `shnanashal, shlanka, shish, sh, sheesakharadha`
