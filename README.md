@@ -65,21 +65,44 @@ The model is evaluated using an automated process where specific print statement
 
 You can monitor the evaluation metrics to determine the effectiveness of the FNN and RNN models.
 
-## How to Run
+## Results
 
-### Steps
+### 1. **1-Gram Model**
+   - **Validation Perplexity (without smoothing):** 13.6315
+   - **Validation Perplexity (with smoothing):** 13.6321
+   - **Generated Names:**
+     - Prefix: `<s><s>sh`
+     - Names: `peaenm</s>ccdji)nghlgar, <s>jhm)jye,uidf&ya</s>r&&, (slyulpfltrru0,l</s>b&a, skkt</s>chi,rim,aauo<s>i</s>, 0o,yap,g0&cftdiom</s>m0`
+   
+### 2. **2-Gram Model**
+   - **Validation Perplexity (without smoothing):** 5.5944
+   - **Validation Perplexity (with smoothing):** 6.0882
+   - **Generated Names:**
+     - Prefix: `<s><s>sh`
+     - Names: `ha, ha, ha, ha, ha`
 
-1. Clone this repository:
-    ```bash
-    git clone <repository_url>
-    cd <repository_directory>
-    ```
+### 3. **3-Gram Model**
+   - **Validation Perplexity (without smoothing):** 4.6436
+   - **Generated Names:**
+     - Prefix: `<s><s>sh`
+     - Names: `shnanashal, shlanka, shish, sh, sheesakharadha`
 
-2. Run the script:
-    ```bash
-    python PALLEKONDA_NAVEEN_KUMAR_22915_assignment2.py
-    ```
+### 4. **Feedforward Neural Network (FNN)**
+   - **Validation Perplexity:** 7.3570
+   - **Generated Names:**
+     - Prefix: `<s><s>sh`
+     - Names: `<s><s>shmtmdsfnmrmbjpcjm, <s><s>shbnmnahaskjaansks, <s><s>shykdbfayjansfmrsd, <s><s>shksmmlnrdspsmrsmf, <s><s>shkaspkbtasmsssjan`
+   - **Generated Names (Prefix: `aash`):**
+     - `aashb, aashdss, aashi, aashk, aashljmnr`
 
+### 5. **Recurrent Neural Network (RNN)**
+   - **Validation Perplexity:** 13.4957
+   - **Generated Names:**
+     - Prefix: `<s><s>sh`
+     - Names: `shiikkss, sheellaa, sheemm, sheennaa, shpprrbb`
+   - **Generated Names (Prefix: `aash`):**
+     - `aashii, aashaa, aashaannee, aashaassaa, aash`
+       
 ## Files
 
 - **`PALLEKONDA_NAVEEN_KUMAR_22915_assignment2.py`**: Main Python script for training and evaluating the models.
